@@ -1,14 +1,16 @@
 
 
-
-
-
-
-
-
-
-
-
-
-
+buildscript {
+    repositories {
+        maven { url "https://mirrors.tencent.com/nexus/repository/maven-public/" }
+        maven { url "https://mirrors.tencent.com/repository/maven/thirdparty-snapshots/" }
+        maven { url "https://mirrors.tencent.com/repository/maven/thirdparty"}
+        mavenLocal()
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.0.0'
+    }
+}
 
